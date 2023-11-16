@@ -1,0 +1,18 @@
+import numpy as np
+def multiply_matrices(matrix1, matrix2):
+    result = np.dot(matrix1, matrix2)
+    return result
+
+# Generating two random 3x3 matrices
+matrix_a = np.random.rand(3, 3)
+matrix_b = np.random.rand(3, 3)
+
+print("Matrix A:")
+print(matrix_a)
+print("\nMatrix B:")
+print(matrix_b)
+
+# Performing matrix multiplication and printing the result
+result_matrix = multiply_matrices(matrix_a, matrix_b)
+print("\nResult of Matrix Multiplication:")
+print(result_matrix)
